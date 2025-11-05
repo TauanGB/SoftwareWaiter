@@ -1,6 +1,4 @@
 # Arquivos de build
-*.apk
-*.apks
 *.aab
 
 # Logs
@@ -20,4 +18,5 @@ Thumbs.db
 *.tmp
 *.bak
 
+.code-workspace
 

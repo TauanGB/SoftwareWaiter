@@ -1,9 +1,7 @@
 {
-  "version_name": "1.4.0",
-  "version_code": 42,
+  "version_name": "1.0.0",
+  "version_code": 1,
   "url": "/downloads/latest.apk",
-  "sha256": "COLOQUE_SHA256_OPCIONAL",
-  "changelog": "• Novo relatório\n• Correções de login"
+  "sha256": "DF66053EB65AD2040357A9202C2D463CA0A08F84ACE607B75A642268B9D714D4",
+  "changelog": "Primeiro build publicado."
 }
-
-

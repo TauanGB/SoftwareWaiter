@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "../SistemaEG3"
+		},
+		{
+			"path": "../Software-EG3"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {}
+}

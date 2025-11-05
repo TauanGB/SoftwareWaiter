@@ -4,7 +4,7 @@ COPY downloads/releases ./releases
 COPY downloads/latest.json .
 # Alias para a versão vigente (ajuste o nome do .apk de origem ao publicar)
 # IMPORTANTE: Atualize este nome ao publicar nova versão
-RUN cp releases/meuapp-1.4.0+42.apk latest.apk 2>/dev/null || echo "AVISO: APK não encontrado, será necessário copiar manualmente"
+RUN cp releases/sistema-eg3-1.0.0+1.apk latest.apk 2>/dev/null || echo "AVISO: APK não encontrado, será necessário copiar manualmente"
 
 FROM nginx:alpine
 ENV PORT=8080
