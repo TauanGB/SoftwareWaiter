@@ -1,0 +1,45 @@
+events {}
+
+http {
+  server {
+    listen 0.0.0.0:${PORT};
+    server_name _;
+
+    types { application/vnd.android.package-archive apk; }
+
+    # Raiz dos estáticos
+    root /usr/share/nginx/html;
+
+    # Cache agressivo para APKs; download forçado com nome
+    location ~* \.apk$ {
+      add_header Cache-Control "public, max-age=31536000" always;
+      add_header Content-Disposition "attachment";
+      try_files $uri =404;
+    }
+
+    # latest.json: sempre fresco + CORS permissivo
+    location = /downloads/latest.json {
+      add_header Cache-Control "no-store" always;
+      add_header Content-Type "application/json" always;
+      add_header Access-Control-Allow-Origin "*" always;
+      add_header Access-Control-Allow-Methods "GET, OPTIONS" always;
+      add_header Access-Control-Allow-Headers "Accept, Content-Type" always;
+      try_files $uri =404;
+      
+      if ($request_method = OPTIONS) {
+        return 204;
+      }
+    }
+
+    # Health check endpoint
+    location = /health {
+      access_log off;
+      return 200 "OK\n";
+      add_header Content-Type text/plain;
+    }
+
+    # Bloqueia listagem de diretório
+    autoindex off;
+  }
+}
+

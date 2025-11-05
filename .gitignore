@@ -1,0 +1,22 @@
+# Arquivos de build
+*.apk
+*.apks
+*.aab
+
+# Logs
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDEs
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Arquivos temporários
+*.tmp
+*.bak
+
