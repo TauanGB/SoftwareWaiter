@@ -334,3 +334,4 @@ docker exec <container-id> cat /usr/share/nginx/html/downloads/latest.json
 
 Este projeto é parte do ecossistema SOFTWARE-EG3.
 
+

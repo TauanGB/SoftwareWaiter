@@ -131,3 +131,4 @@ E comparar `version_code` com o `buildNumber` local.
 
 Todos os arquivos foram criados e estão prontos para commit e push. O projeto está completo e funcional.
 
+

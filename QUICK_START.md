@@ -132,3 +132,4 @@ docker exec <container-id> ls -la /usr/share/nginx/html/downloads/
 - Configure o domínio no Railway
 - Integre com o app Flutter (SOFTWARE-EG3)
 
+

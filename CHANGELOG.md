@@ -16,3 +16,4 @@ Todas as mudanças notáveis neste projeto serão documentadas neste arquivo.
 - Dockerfile multi-stage para otimização
 - Configuração para Railway (variável PORT)
 
+
